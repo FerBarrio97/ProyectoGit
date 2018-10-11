@@ -13,6 +13,7 @@ public class Contacto {
     private String nombre;
     private String tlfono;
     private String alias;
+    private String apellidos;
 
     public Contacto(String nombre, String tlfono) {
         this.nombre = nombre;
@@ -41,6 +42,14 @@ public class Contacto {
 
     public void setAlias(String alias) {
         this.alias = alias;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
     
     
