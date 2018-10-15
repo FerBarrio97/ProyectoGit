@@ -14,6 +14,7 @@ public class Contacto {
     private String tlfono;
     private String alias;
     private String apellidos;
+    private static int numerodecontactos = 0;
 
     public Contacto(String nombre, String tlfono) {
         this.nombre = nombre;
@@ -51,6 +52,16 @@ public class Contacto {
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
+
+    public static int getNumerodecontactos() {
+        return numerodecontactos;
+    }
+
+    public static void setNumerodecontactos(int numerodecontactos) {
+        Contacto.numerodecontactos = numerodecontactos;
+    }
+    
+    
     
     
     
